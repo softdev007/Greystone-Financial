@@ -12,6 +12,7 @@ import {
 import * as Linking from "expo-linking";
 import GFButton from "./components/GFButton";
 import { WebView } from "react-native-webview";
+import * as Facebook from "expo-facebook";
 
 class MainApp extends Component {
   componentDidMount() {
@@ -96,7 +97,7 @@ class MainApp extends Component {
       goodbye: "now",
     });
     setTimeout(() => {
-      this.setState({ isDeepLinking: false });
+      this.setState({ isDeepLinking: true });
     }, 1000);
   }
 
